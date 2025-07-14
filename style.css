@@ -18,3 +18,7 @@ h1 {
   font-weight: 400;
   color: hsl(241, 100%, 89%);
 }
+
+button:hover{
+  background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
