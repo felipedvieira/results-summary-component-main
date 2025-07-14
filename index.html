@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <title>Frontend Mentor | Results summary component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .hanken-grotesk {
+        font-family: "Hanken Grotesk", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500, 700, 800;
+        font-style: normal;
+      }
+      .blue-box {
+        height: 400px;
+        width: 100%;
+        background-image: linear-gradient(
+          hsl(252, 100%, 67%),
+          hsl(241, 81%, 54%)
+        );
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: start;
+      }
+      .blue-Circle {
+        display: flex;
+        height: 100px;
+        width: 100px;
+        background-image: linear-gradient(
+          hsla(256, 72%, 46%, 1),
+          hsla(241, 72%, 46%, 0)
+        );
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .box-Reaction {
+        display: flex;
+        height: 40px;
+        width: 300px;
+        border-radius: 5px;
+        background-color: hsla(0, 100%, 67%, 0.1);
+        color: hsla(0, 100%, 67%);
+      }
+      .box-Memory {
+        height: 40px;
+        width: 300px;
+        border-radius: 5px;
+        background-color: hsla(39, 100%, 56%, 0.1);
+        color: hsla(39, 100%, 56%);
+      }
+      .box-Verbal {
+        height: 40px;
+        width: 300px;
+        border-radius: 5px;
+        background-color: hsla(166, 100%, 37%, 0.1);
+        color: hsla(166, 100%, 37%);
+      }
+      .box-Visual {
+        height: 40px;
+        width: 300px;
+        border-radius: 5px;
+        background-color: hsla(234, 85%, 45%, 0.1);
+        color: hsla(234, 85%, 45%);
+      }
+
+      .result-Size {
+        font-weight: 700;
+        font-size: 40px;
+        color: white;
+      }
+      .result-add-Size {
+        font-weight: 400;
+        font-size: 14px;
+        color: hsl(241, 100%, 89%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="blue-box">
+      <h1>Your Result</h1>
+      <div class="blue-Circle">
+        <p class="result-Size">76</p>
+        <p class="result-add-Size">of 100</p>
+      </div>
+      <div>
+        <h2>Great</h2>
+        <p>
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </div>
+    </div>
+    <h2>Summary</h2>
+    <div class="box-Reaction">
+      <img src="assets\images\icon-reaction.svg" alt="reaction" />
+      <p>Reaction 80 / 100</p>
+    </div>
+    <div class="box-Memory">
+      <img src="assets\images\icon-memory.svg" alt="memory" />
+      <p>Memory 92 / 100</p>
+    </div>
+    <div class="box-Verbal">
+      <img src="assets\images\icon-verbal.svg" alt="verbal" />
+      <p>Verbal 61 / 100</p>
+    </div>
+    <div class="box-Visual">
+      <img src="assets\images\icon-visual.svg" alt="visual" />
+      <p>Visual 72 / 100</p>
+    </div>
+
+    <button>Continue</button>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </body>
+</html>
