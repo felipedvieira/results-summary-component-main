@@ -23,6 +23,7 @@
       .attribution {
         font-size: 11px;
         text-align: center;
+        height: 100%;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
@@ -34,24 +35,24 @@
         font-style: normal;
       }
       .blue-box {
-        height: 280px;
         width: 100%;
         background-image: linear-gradient(
           hsl(252, 100%, 67%),
           hsl(241, 81%, 54%)
         );
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 35px;
+        border-bottom-right-radius: 35px;
         display: flex;
         flex-direction: column;
         text-align: center;
         align-items: center;
         justify-content: start;
+        margin-bottom: 20px;
       }
       .blue-Circle {
         display: flex;
-        height: 100px;
-        width: 100px;
+        height: 110px;
+        width: 110px;
         background-image: linear-gradient(
           hsla(256, 72%, 46%, 1),
           hsla(241, 72%, 46%, 0)
@@ -63,44 +64,47 @@
       }
 
       .box-Reaction {
-        height: 40px;
+        height: 50px;
         width: 300px;
-        border-radius: 5px;
+        border-radius: 10px;
         background-color: hsla(0, 100%, 67%, 0.1);
         color: hsla(0, 100%, 67%);
         display: flex;
         align-items: center;
-
+        margin-bottom: 20px;
       }
       .box-Memory {
-        height: 40px;
+        height: 50px;
         width: 300px;
-        border-radius: 5px;
+        border-radius: 10px;
         background-color: hsla(39, 100%, 56%, 0.1);
         color: hsla(39, 100%, 56%);
         display: flex;
         align-items: center;
+        margin-bottom: 20px;
       }
       .box-Verbal {
-        height: 40px;
+        height: 50px;
         width: 300px;
-        border-radius: 5px;
+        border-radius: 10px;
         background-color: hsla(166, 100%, 37%, 0.1);
         color: hsla(166, 100%, 37%);
         display: flex;
         align-items: center;
+        margin-bottom: 20px;
       }
       .box-Visual {
-        height: 40px;
+        height: 50px;
         width: 300px;
-        border-radius: 5px;
+        border-radius: 10px;
         background-color: hsla(234, 85%, 45%, 0.1);
         color: hsla(234, 85%, 45%);
         display: flex;
         align-items: center;
+        margin-bottom: 20px;
       }
 
-      .div-stats{
+      .div-stats {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -117,56 +121,140 @@
         font-size: 14px;
         color: hsl(241, 100%, 89%);
       }
-    
 
-      .button-Continue{
-        height: 40px;
+      .button-Continue {
+        height: 50px;
         width: 300px;
         background-color: hsl(224, 30%, 27%);
         border: none;
-        border-radius: 5px;
+        border-radius: 50px;
+        color: white;
+        font-weight: 400;
+        letter-spacing: 0.3px;
+        font-family: "Hanken Grotesk", sans-serif;
+      }
+
+      .padding18px {
+        padding-top: 18px;
+        padding-bottom: 18px;
+      }
+
+      .fontSize22px {
+        font-size: 22px;
+        font-weight: 500;
+      }
+      .fontSize16px {
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      .summary {
+        font-size: 20px;
+        padding-left: 35px;
+        margin-bottom: 20px;
+      }
+
+      .coloredText {
+        font-size: 14px;
+        font-weight: 600;
+        padding-right: 120px;
+      }
+      .numberColor {
+        color: black;
+        font-weight: 600;
+        font-size: 15px;
+      }
+      .greyNumber {
+        color: rgba(131, 130, 130, 0.726);
+        padding-left: 5px;
+      }
+      .p_top_24px {
+        padding-top: 24px;
+      }
+
+      .p-text {
+        width: 60%;
+        padding-top: 10px;
+        padding-bottom: 40px;
+      }
+
+      .p-icon {
+        padding-left: 15px;
+        padding-right: 10px;
+      }
+      .p-verbal {
+        padding-right: 132px;
+      }
+      .p-visual {
+        padding-right: 136px;
+      }
+
+      .bottom-fix {
+        position: relative;
+      }
+      .bottom-absolute {
+        position: fixed;
+        width: 100%;
+        bottom: 0px;
       }
     </style>
   </head>
   <body>
     <div class="blue-box">
-      <h1>Your Result</h1>
+      <h1 class="padding18px fontSize16px">Your Result</h1>
       <div class="blue-Circle">
         <p class="result-Size">76</p>
         <p class="result-add-Size">of 100</p>
       </div>
-      <div>
-        <h2 class="result-Size">Great</h2>
-        <p class="result-add-Size">
+      <div style="justify-items: center">
+        <h2 class="result-Size fontSize22px p_top_24px">Great</h2>
+        <p class="result-add-Size p-text">
           You scored higher than 65% of the people who have taken these tests.
         </p>
       </div>
     </div>
-    <div class="div-stats">
-    <h2 style="align-self: flex-start;">Summary</h2>
-    <div class="box-Reaction">
-      <img src="assets\images\icon-reaction.svg" alt="reaction" />
-      <p>Reaction 80 / 100</p>
-    </div>
-    <div class="box-Memory">
-      <img src="assets\images\icon-memory.svg" alt="memory" />
-      <p>Memory 92 / 100</p>
-    </div>
-    <div class="box-Verbal">
-      <img src="assets\images\icon-verbal.svg" alt="verbal" />
-      <p>Verbal 61 / 100</p>
-    </div>
-    <div class="box-Visual">
-      <img src="assets\images\icon-visual.svg" alt="visual" />
-      <p>Visual 72 / 100</p>
-    </div>
-    <button type="button" class="button-Continue">Continue</button>
-    </div>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+    <div class="div-stats" style="margin-bottom: 30px">
+      <h2 class="summary" style="align-self: flex-start">Summary</h2>
+      <div class="box-Reaction">
+        <img
+          class="p-icon"
+          src="assets\images\icon-reaction.svg"
+          alt="reaction" />
+        <p class="coloredText">Reaction</p>
+        <p class="numberColor">80 <span class="greyNumber">/ 100</span></p>
+      </div>
+      <div class="box-Memory">
+        <img class="p-icon" src="assets\images\icon-memory.svg" alt="memory" />
+        <p class="coloredText">Memory</p>
+        <p class="numberColor">92 <span class="greyNumber">/ 100</span></p>
+      </div>
+      <div class="box-Verbal">
+        <img class="p-icon" src="assets\images\icon-verbal.svg" alt="verbal" />
+        <p class="coloredText p-verbal">Verbal</p>
+        <p class="numberColor">61 <span class="greyNumber">/ 100</span></p>
+      </div>
+      <div class="box-Visual">
+        <img class="p-icon" src="assets\images\icon-visual.svg" alt="visual" />
+        <p class="coloredText p-visual">Visual</p>
+        <p class="numberColor">71 <span class="greyNumber">/ 100</span></p>
+      </div>
+      <button type="button" class="button-Continue">Continue</button>
     </div>
   </body>
 </html>
+<!--
+    <div class="bottom-fix">
+      <div class="attribution bottom-absolute">
+        <hr />
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/felipedvieira" target="_blank"
+          >felipedvieira</a
+        >.
+      </div>
+    </div>
+  </body>
+</html>
+-->
