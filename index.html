@@ -197,25 +197,106 @@
         width: 100%;
         bottom: 0px;
       }
+
+      @media (min-width: 700px) {
+        .background-Desktop {
+          background-color: hsl(221, 100%, 96%);
+        }
+        .blue-box {
+          width: 320px;
+          height: 450px;
+          background-image: linear-gradient(
+            hsl(252, 100%, 67%),
+            hsl(241, 81%, 54%)
+          );
+          border-radius: 35px;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+          transform: translate(30px, -5px);
+        }
+        .white-box {
+          width: 350px;
+          height: 450px;
+          background-color: white;
+          border-bottom-right-radius: 35px;
+          border-top-right-radius: 35px;
+          display: flex;
+          flex-direction: column;
+        }
+        .body-flex {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+        }
+        .padding-Desktop-Heading {
+          padding-left: 55px;
+          padding-top: 30px;
+        }
+        .coloredText {
+          font-size: 14px;
+          font-weight: 600;
+          padding-right: 95px;
+        }
+        .p-verbal {
+          padding-right: 108px;
+        }
+        .p-visual {
+          padding-right: 110px;
+        }
+        .Desktop-box-adjust {
+          margin-left: 30px;
+          width: 270px;
+          height: 45px;
+          margin-bottom: 15px;
+        }
+        .button-margin {
+          margin-bottom: 50px;
+        }
+        .blue-Circle {
+          width: 170px;
+          height: 170px;
+        }
+        .Desktop-Result-Text {
+          font-size: 22px;
+          margin-bottom: 20px;
+        }
+        .result-NumberSize {
+          font-size: 64px;
+        }
+        .great-Size {
+          font-size: 32px;
+        }
+        .p-text {
+          width: 55%;
+        }
+      }
     </style>
   </head>
-  <body>
+  <body class="background-Desktop body-flex">
     <div class="blue-box">
-      <h1 class="padding18px fontSize16px">Your Result</h1>
+      <h1 class="padding18px fontSize16px Desktop-Result-Text">Your Result</h1>
       <div class="blue-Circle">
-        <p class="result-Size">76</p>
+        <p class="result-Size result-NumberSize">76</p>
         <p class="result-add-Size">of 100</p>
       </div>
       <div style="justify-items: center">
-        <h2 class="result-Size fontSize22px p_top_24px">Great</h2>
+        <h2 class="result-Size fontSize22px p_top_24px great-Size">Great</h2>
         <p class="result-add-Size p-text">
           You scored higher than 65% of the people who have taken these tests.
         </p>
       </div>
     </div>
-    <div class="div-stats" style="margin-bottom: 30px">
-      <h2 class="summary" style="align-self: flex-start">Summary</h2>
-      <div class="box-Reaction">
+    <div class="div-stats white-box" style="margin-bottom: 30px">
+      <h2
+        class="summary padding-Desktop-Heading"
+        style="align-self: flex-start">
+        Summary
+      </h2>
+      <div class="box-Reaction Desktop-box-adjust">
         <img
           class="p-icon"
           src="assets\images\icon-reaction.svg"
@@ -223,22 +304,24 @@
         <p class="coloredText">Reaction</p>
         <p class="numberColor">80 <span class="greyNumber">/ 100</span></p>
       </div>
-      <div class="box-Memory">
+      <div class="box-Memory Desktop-box-adjust">
         <img class="p-icon" src="assets\images\icon-memory.svg" alt="memory" />
         <p class="coloredText">Memory</p>
         <p class="numberColor">92 <span class="greyNumber">/ 100</span></p>
       </div>
-      <div class="box-Verbal">
+      <div class="box-Verbal Desktop-box-adjust">
         <img class="p-icon" src="assets\images\icon-verbal.svg" alt="verbal" />
         <p class="coloredText p-verbal">Verbal</p>
         <p class="numberColor">61 <span class="greyNumber">/ 100</span></p>
       </div>
-      <div class="box-Visual">
+      <div class="box-Visual Desktop-box-adjust button-margin">
         <img class="p-icon" src="assets\images\icon-visual.svg" alt="visual" />
         <p class="coloredText p-visual">Visual</p>
         <p class="numberColor">71 <span class="greyNumber">/ 100</span></p>
       </div>
-      <button type="button" class="button-Continue">Continue</button>
+      <button type="button" class="button-Continue Desktop-box-adjust">
+        Continue
+      </button>
     </div>
   </body>
 </html>
